@@ -28,22 +28,33 @@ public class Main {
       
       try {
 	    //test connection (QuotixDB)-------------------------------------------------------------------------------------------
-		QuotixDB.getConnection();
-		System.out.println("connection success");
+    	/*Note: change the end point of this comment block to just above the "--" when done testing this function
+		if(QuotixDB.getConnection() != null) {
+			System.out.println("connection success");
+		}
+		else {
+			System.out.println("No connection/ran into issues getting the connection")
+		}
+		
+		*/
 		//---------------------------------------------------------------------------------------------------------------------
 		
-		System.out.println();//formatting
+		//System.out.println();//formatting
 		
 		//TEST: getting the quote by entering the id number of the quote (DatabaseConnectFunctions and MovieQuoteData)---------
+		/*Note: change the end point of this comment block to just above the "--" when done testing this function
 		DatabaseConnectFunctions test1 = new DatabaseConnectFunctions();
 		final int id = 13;
 		MovieQuoteData qData1 = test1.getQbyId(id);//get quote and data with the id passed in (in this case 1)
 		System.out.println("ID = " + qData1.getId() + "     Quote = " + qData1.getQuote());//print out the id and the quote for proof
+		
+		*/
 		//----------------------------------------------------------------------------------------------------------------------
 		
-		System.out.println();//formatting
+		//System.out.println();//formatting
 		
 		//TEST: Getting a quote by entering the quote/string (DatabaseConnectFunctions and MovieQuoteData)----------------------
+    	/*Note: change the end point of this comment block to just above the "--" when done testing this function
 		DatabaseConnectFunctions test2 = new DatabaseConnectFunctions();
 		final String quote = "No, I am your father";
 		MovieQuoteData qData2 = test2.getQbyString(quote);//get the quote entered (if the quote exists in DB)
@@ -51,6 +62,7 @@ public class Main {
 		if(qData2 != null) {
 			System.out.println("ID = " + qData2.getId() + "     Quote = " + qData2.getQuote());
 		}
+		*/
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//System.out.println();//formatting
@@ -101,7 +113,7 @@ public class Main {
 		
 		System.out.println();//formatting
 		
-		//TEST: Program "interface" (DatabaseConnectFunctions and MovieQuoteData)---------------------------------------------
+		//TEST: Program (DatabaseConnectFunctions and MovieQuoteData)---------------------------------------------
 		/*Note: change the end point of this comment block to just above the "--" when done testing this function */
 		DatabaseConnectFunctions test5 = new DatabaseConnectFunctions();
 		System.out.println("Enter a quote to be searched: ");//prompt user
@@ -121,12 +133,11 @@ public class Main {
 		
 		//--------------------------------------------------------------------------------------------------------------------
 		
-		System.out.println();//formatting
-		
-    } catch (ClassNotFoundException e) {
-    	// TODO Auto-generated catch block
-    	e.printStackTrace();
-    } catch (SQLException e) {
+//    } catch (ClassNotFoundException e) {
+//    	// TODO Auto-generated catch block
+//    	e.printStackTrace();
+    } 
+      catch (Exception e) {
     	// TODO Auto-generated catch block
     	e.printStackTrace();
     }  
