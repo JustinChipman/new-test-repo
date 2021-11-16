@@ -1,0 +1,185 @@
+/**
+ *@author Jacob Skenandore
+ *@author 
+ *
+ *@Date: 11/12/2021 
+ *@Time: 12:44 AM last updated (Central Time)
+*/
+
+
+/*Formatting the input to look nice and bold*/
+input[type=text]:focus {
+	border: 3px solid rgb(33, 33, 33);
+	background-color: rgb(255, 248, 233);
+}
+input[type=number]:focus {
+	border: 3px solid rgb(33, 33, 33);
+	background-color: rgb(255, 248, 233);
+}
+/*end of formatting input*/
+
+/*header formatting for all pages*/
+.header {
+	padding: 30px;/*changes how far down and wide the background color of the header section goes*/
+	text-align: center;
+	color: maroon;/*text will be this color*/
+	font-size: 25px;
+
+}
+/*End of header formatting*/
+
+
+/*navigation bar formatting for all pages*/
+.navbar {
+	display: flex;/*needs to be flex and have justify-content be center to center contents*/
+	justify-content: center;
+	background-color: rgb(255, 248, 233);
+	overflow: hidden;
+	margin: auto;
+	border-bottom-style: solid;
+	border-color: maroon;
+	width: 1080px;
+
+}
+
+.navbar a {
+	color: maroon;
+	padding: 10px 20px;
+	text-decoration: none; /*removes the underline for the link*/
+
+}
+/*End of nav bar formatting*/
+
+
+/*For subheading that exists on the other pages (outside of the Home page)*/
+.subheading {
+	padding: 20px;
+	text-align: center;
+	color: maroon;
+	font-size: 20px;
+		
+}
+/*End of subheading formatting*/
+
+
+/*Home Page formatting*/
+.searchBarHome {
+	text-align: center;
+	margin: auto;
+	width: 1080px;
+	background-color: rgb(245, 236,205);
+	padding: 10px;
+
+}
+
+.searchBarHome p{
+	color: rgb(33, 33, 33);
+	padding: 10px;
+		
+}
+/*End of Home Page formatting*/
+
+
+/*Search Page formatting*/
+.searchBar_SearchPage{
+	text-align: center;
+	margin: auto;
+	width: 1080px;
+	background-color: rgb(245, 236,205);
+	padding: 10px;
+		
+}
+/* End of Search Page formatting*/
+
+
+/*Quote suggestion page formatting*/
+.quoteSuggestionIntro{
+	color: rgb(33, 33, 33);
+	padding: 20px;
+	width: 800px;
+	text-indent: 25px;
+	margin: auto;
+	
+}
+
+.quoteSuggestionForm{/*Form section overall formatting*/
+	padding: 20px;
+	width: 1080px;
+	margin: auto;
+	background-color: rgb(255, 204, 204);
+	display: flex;
+	justify-content: center;
+	
+}
+
+.requiredEntries{
+	color: rgb(33, 33, 33);
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	
+}
+.requiredEntries label{
+	padding-left: 20px;
+}
+
+.midEntries{
+	color: maroon;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+
+}
+.midEntries label{
+	padding-left: 20px;
+}
+
+.lastEntries{
+	color: maroon;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	
+}
+.lastEntries label{
+	padding-left: 20px;
+}
+
+.submitQuoteButton{
+	float: right;
+	padding: 20px;
+	
+}
+/*End of Quote Suggestion formatting*/
+
+
+/*About Quotix page formatting*/
+.aboutQuotixIntro{
+	color: rgb(33, 33, 33);
+	padding: 20px;
+	width: 800px;
+	text-indent: 25px;
+	margin: auto;
+	background-color: rgb(245, 236,205);
+	
+}
+.aboutQuotixIntro img {
+	float: right;
+	position: relative;
+	bottom: 85px;
+	left: 10px;
+	
+}
+
+/*End of About Quotix page formatting
+
+
+/*Footer formatting*/
+.footer{
+	margin: 500px;
+	text-align: center;
+	color: maroon;
+	font-size: 10px;
+	background-color: rgb(255, 248, 233);
+	
+}

@@ -1,0 +1,118 @@
+<!-- 
+@author Jacob Skenandore
+@author Ryan Hornberger
+
+@Date: 11/12/2021 
+@Time: 12:45 AM last updated (Central Time)
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+
+<!-- Include the stylesheet page with the CSS and include the meta tags that help with viewing the page -->
+<head>
+	<title>Quote Suggestion | Quotix</title>
+	<link rel = "stylesheet" href = "QuotixWebpageFormatting.css">
+	<meta charset = "UTF-8">
+	<meta name = "Viewport" content = "width = device-width, initial-scale = 1">
+</head>
+<!-- End of head section -->
+
+<!-- Body Section Start -->
+<body>
+
+	<!-- Header section of all the pages -->
+	<div class = "header">
+		<h1>Quotix</h1>
+	</div>
+	<!-- End of header section -->
+	
+	<!-- Navigation bar for the users to jump to needed pages -->
+	<div class = "navbar">
+		<a href = "Quotix.html">Home</a>
+		<a href = "Quotix_Search.html">Search</a>
+		<a href = "Quotix_QuoteSuggestion.html">Quote Suggestion</a>
+		<a href = "Quotix_AboutQuotix.html">About Quotix</a>
+	</div>
+	<!-- End of Navigation bar section -->
+	
+	<br>
+	
+	<!-- Subheading of Search Results to indicate to the user that they are on the search page -->
+	<div class = "subheading">
+		<h2>Quote Suggestion</h2>
+	</div>
+	<!-- End of subheading -->
+	
+	
+	<!-- Create the upper portion of the Quote Suggestion page that breaks down what the page is used for -->
+	<div class = "quoteSuggestionIntro">
+		<p>Quotix allows its users to suggest a quote to be added to our database! How fun is that? Any quote we may have missed or you feel should be added 
+		(or updated) we will take the information you provide us (quote, movie title, etc) and we shall review it and add it to our database (if correct).</p>
+	</div>
+	<!-- End of intro -->
+	
+	<br>
+	
+	<!-- create lower portion - that is create the form that is submittable (make quote and movie title required) -->
+	<div class = "quoteSuggestionForm">		
+		
+		<!-- Create form itself that has text entries for *quote, *movie title, character, actor/actress, movie genre, movie release year, and movie length (in mins) -->
+		<form>
+			<h3 style = "color: maroon">Quote Information</h3>
+			
+			<div class = "requiredEntries">
+				<label for="Quote">*Quote: (REQUIRED)</label>
+					<input type = "text" id = "Quote" name = "Quote" required="required">
+				<label for="MovieName">*Movie Title: (REQUIRED)</label>
+					<input type = "text" id = "MovieName" name = "MovieName" required="required">
+			</div>
+				
+			<div class = "midEntries">	
+				<label for="CharName">Character Name:</label>
+					<input type = "text" id = "CharName" name = "CharName">
+				<label for="ActorName">Actor/Actress:</label>
+					<input type = "text" id = "ActorName" name = "ActorName">
+				<label for="Genre">Movie Genre</label>
+					<input type = "text" id = "Genre" name = "Genre">
+			</div>
+			
+			<div class = "lastEntries">
+				<label for="ReleaseYear">Movie Release Year:</label>
+					<input type = "number" id = "ReleaseYear" name = "ReleaseYear">
+				<label for="Length">Movie Runtime</label>
+					<input type = "number" id = "Length" name = "Length">
+			</div>
+			
+		<!-- button to send the form somewhere to pend review/being added -->
+			<div class = "submitQuoteButton">
+				<button>Submit Quote</button>
+			</div>
+		</form>
+	</div>
+	<!-- End of quote suggestion form -->
+	
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Footer with copyright -->
+	<div class = "footer">
+		<p style = "clear: left">@2021 by Quotix. Made for CS-458. All rights reserved.
+	</div>
+	<!-- End of footer -->
+	
+
+
+</body>
+<!-- End of Body section -->
+
+</html>
+<!-- End of html -->
